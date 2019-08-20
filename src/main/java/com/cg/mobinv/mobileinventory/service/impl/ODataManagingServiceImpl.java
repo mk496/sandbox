@@ -17,8 +17,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.cg.mobinv.mobileinventory.common.api.to.FileTo;
-import com.cg.mobinv.mobileinventory.service.api.FileService;
+//import com.cg.mobinv.mobileinventory.common.api.to.FileTo;
+//import com.cg.mobinv.mobileinventory.service.api.FileService;
 import com.cg.mobinv.mobileinventory.service.api.ODataManagingService;
 import com.cg.mobinv.mobileinventory.service.api.ODataOperationService;
 import com.cg.mobinv.mobileinventory.service.impl.odata.AnnotatedClassesConfiguration;
@@ -172,10 +172,10 @@ public class ODataManagingServiceImpl implements ODataManagingService {
     public Object writeBinaryData(EdmEntitySet entitySet, Object mediaLinkEntryData, BinaryData binaryData)
             throws ODataNotImplementedException, EdmException {
 
-        if (mediaLinkEntryData instanceof FileTo) {
-            FileServiceImpl mediaService = (FileServiceImpl) getService(entitySet.getName());
-            return mediaService.writeBinaryData(binaryData, (FileTo) mediaLinkEntryData);
-        }
+//        if (mediaLinkEntryData instanceof FileTo) {
+//            FileServiceImpl mediaService = (FileServiceImpl) getService(entitySet.getName());
+//            return mediaService.writeBinaryData(binaryData, (FileTo) mediaLinkEntryData);
+//        }
 
         logger.warn("Write binary data is not supported for type: " + entitySet.getName());
         throw new ODataNotImplementedException(ODataNotImplementedException.COMMON);
@@ -185,10 +185,10 @@ public class ODataManagingServiceImpl implements ODataManagingService {
     public BinaryData readBinaryData(EdmEntitySet entitySet, Object mediaLinkEntryData)
             throws ODataNotImplementedException, EdmException {
 
-        if (mediaLinkEntryData instanceof FileTo) {
-            FileService mediaService = (FileService) getService(entitySet.getName());
-            return mediaService.readBinaryData(mediaLinkEntryData);
-        }
+//        if (mediaLinkEntryData instanceof FileTo) {
+//            FileService mediaService = (FileService) getService(entitySet.getName());
+//            return mediaService.readBinaryData(mediaLinkEntryData);
+//        }
 
         logger.warn("Read binary data is not supported for type: " + entitySet.getName());
         throw new ODataNotImplementedException(ODataNotImplementedException.COMMON);
