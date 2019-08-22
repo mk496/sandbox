@@ -11,28 +11,20 @@ public class PayhdtTo {
     private Long id;
 	
 	@EdmProperty
-	private String locationDescription;
+	private String storeNumber;
 	
 	@EdmProperty
-	private String building;
-	
-	@EdmProperty
-	private String floor;
-	
-	@EdmProperty
-	private String room;
-	
+	private String hdtday;
+			
 	public PayhdtTo() {}
 	
-	public PayhdtTo(Long id, String locationDescription, String building, String floor, String room) {
+	public PayhdtTo(Long id, String storeNumber, String hdtday ) {
 		this.id = id;
-		this.locationDescription = locationDescription;
-		this.building = building;
-		this.floor = floor;
-		this.room = room;
+		this.storeNumber = storeNumber;
+		this.hdtday = hdtday;
+		
 	}
 	
-
 	public Long getId() {
 		return id;
 	}
@@ -41,35 +33,20 @@ public class PayhdtTo {
 		this.id = id;
 	}
 
-	public String getLocationDescription() {
-		return locationDescription;
+	public String getStoreNumber() {
+		return storeNumber;
 	}
 
-	public void setLocationDescription(String locationDescription) {
-		this.locationDescription = locationDescription;
+	public void setStoreNumber(String storeNumber) {
+		this.storeNumber = storeNumber;
 	}
 
-	public String getBuilding() {
-		return building;
+	public String getHdtday() {
+		return hdtday;
 	}
 
-	public void setBuilding(String building) {
-		this.building = building;
-	}
-
-	public String getFloor() {
-		return floor;
-	}
-
-	public void setFloor(String floor) {
-		this.floor = floor;
-	}
-
-	public String getRoom() {
-		return room;
-	}
-
-	public void setRoom(String room) {
-		this.room = room;
+	public void setHdtday(String hdtday) {
+		this.hdtday = hdtday;
 	}
 }
+	

@@ -14,29 +14,21 @@ public class PayhdtEntity {
 	private Long id;
 	
 	@Nationalized
-	@Column(name = "\"LocationDescription\"")
-	private String locationDescritpion;
+	@Column(name = "\"StoreNumber\"")
+	private String storeNumber;
 	
 	@Nationalized
-	@Column(name = "\"Building\"")
-	private String building;
+	@Column(name = "\"HDTDAY\"")
+	private String hdtday;
 	
-	@Nationalized
-	@Column(name = "\"Floor\"")
-	private String floor;
-	
-	@Nationalized
-	@Column(name = "\"Room\"")
-	private String room;
 	
 	public PayhdtEntity() {}
 	
-	public PayhdtEntity(Long id, String locationDescription, String building, String floor, String room) {
+	public PayhdtEntity(Long id, String storeNumber, String hdtday) {
 		this.id = id;
-		this.locationDescritpion = locationDescription;
-		this.building = building;
-		this.floor = floor;
-		this.room = room;
+		this.storeNumber = storeNumber;
+		this.hdtday = hdtday;
+		
 	}
 
 	public Long getId() {
@@ -47,35 +39,20 @@ public class PayhdtEntity {
 		this.id = id;
 	}
 
-	public String getLocationDescription() {
-		return locationDescritpion;
+	public String getStoreNumber() {
+		return storeNumber;
 	}
 
-	public void setLocationDescription(String locationDesc) {
-		this.locationDescritpion = locationDesc;
+	public void setStoreNumber(String storeNumber) {
+		this.storeNumber = storeNumber;
 	}
 
-	public String getBuilding() {
-		return building;
+	public String getHdtday() {
+		return hdtday;
 	}
 
-	public void setBuilding(String building) {
-		this.building = building;
+	public void setHdtday(String hdtday) {
+		this.hdtday = hdtday;
 	}
 
-	public String getFloor() {
-		return floor;
-	}
-
-	public void setFloor(String stock) {
-		this.floor = stock;
-	}
-
-	public String getRoom() {
-		return room;
-	}
-
-	public void setRoom(String room) {
-		this.room = room;
-	}
 }
