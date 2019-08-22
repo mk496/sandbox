@@ -9,7 +9,7 @@ import org.hibernate.annotations.Nationalized;
 public class LocationsEntity {
 	
 	@javax.persistence.Id
-    @SequenceGenerator(name = "S_Locations", sequenceName = "\"hkrbudgetingdb.db::S_Locations\"", allocationSize = 1)
+    @SequenceGenerator(name = "S_Locations", sequenceName = "\"mcdmpharmdb.db::S_Locations\"", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "S_Locations")
 	private Long id;
 	

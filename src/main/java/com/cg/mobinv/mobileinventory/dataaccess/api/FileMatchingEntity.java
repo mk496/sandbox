@@ -13,7 +13,7 @@ public class FileMatchingEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @SequenceGenerator(name = "S_FileMatching", sequenceName = "\"hkrbudgetingdb.db::S_FileMatching\"", allocationSize = 1)
+    @SequenceGenerator(name = "S_FileMatching", sequenceName = "\"mcdmpharmdb.db::S_FileMatching\"", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "S_FileMatching")
     private Long id;
 
