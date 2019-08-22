@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 import com.cg.mobinv.mobileinventory.common.api.to.LocationsTo;
 import com.cg.mobinv.mobileinventory.dataaccess.api.LocationsEntity;
-import com.cg.mobinv.mobileinventory.dataaccess.api.MaterialEntity;
+
 import com.cg.mobinv.mobileinventory.dataaccess.api.repository.LocationsEntityRepository;
 import com.cg.mobinv.mobileinventory.logic.api.LocationsLogic;
 import com.google.common.collect.Lists;

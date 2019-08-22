@@ -7,7 +7,7 @@ import org.hibernate.annotations.Nationalized;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "\"hkrbudgetingdb.db.dbmodel::hkrbudgeting.FileMatching\"")
+@Table(name = "\"mcdmpharmdb.db.dbmodel::mcdmpharm.FileMatching\"")
 public class FileMatchingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;

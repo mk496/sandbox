@@ -8,7 +8,7 @@ import java.sql.Blob;
 import java.util.List;
 
 @Entity
-@Table(name = "\"hkrbudgetingdb.db.dbmodel::hkrbudgeting.File\"")
+@Table(name = "\"mcdmpharmdb.db.dbmodel::mcdmpharm.File\"")
 public class FileEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;

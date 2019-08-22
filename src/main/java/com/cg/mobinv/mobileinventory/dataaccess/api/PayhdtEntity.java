@@ -5,7 +5,7 @@ import javax.persistence.*;
 import org.hibernate.annotations.Nationalized;
 
 @Entity
-@Table(name = "\"hkrbudgetingdb.db.dbmodel::hkrbudgeting.Payhdt\"")
+@Table(name = "\"mcdmpharmdb.db.dbmodel::mcdmpharm.Payhdt\"")
 public class PayhdtEntity {
 	
 	@javax.persistence.Id
