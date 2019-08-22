@@ -7,13 +7,13 @@ import org.hibernate.annotations.Nationalized;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "\"mcdmpharmdb.db.dbmodel::mcdmpharm.FileMatching\"")
+@Table(name = "\"mpharmdb.db.dbmodel::mpharm.FileMatching\"")
 public class FileMatchingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @SequenceGenerator(name = "S_FileMatching", sequenceName = "\"mcdmpharmdb.db::S_FileMatching\"", allocationSize = 1)
+    @SequenceGenerator(name = "S_FileMatching", sequenceName = "\"mpharmdb.db::S_FileMatching\"", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "S_FileMatching")
     private Long id;
 

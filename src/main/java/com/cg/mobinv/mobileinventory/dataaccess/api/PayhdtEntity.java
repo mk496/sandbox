@@ -5,11 +5,11 @@ import javax.persistence.*;
 import org.hibernate.annotations.Nationalized;
 
 @Entity
-@Table(name = "\"mcdmpharmdb.db.dbmodel::mcdmpharm.Payhdt\"")
+@Table(name = "\"mpharmdb.db.dbmodel::mpharm.Payhdt\"")
 public class PayhdtEntity {
 	
 	@javax.persistence.Id
-    @SequenceGenerator(name = "S_Payhdt", sequenceName = "\"mcdmpharmdb.db::S_Payhdt\"", allocationSize = 1)
+    @SequenceGenerator(name = "S_Payhdt", sequenceName = "\"mpharmdb.db::S_Payhdt\"", allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "S_Payhdt")
 	private Long id;
 	

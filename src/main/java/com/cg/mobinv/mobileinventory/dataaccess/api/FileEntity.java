@@ -8,13 +8,13 @@ import java.sql.Blob;
 import java.util.List;
 
 @Entity
-@Table(name = "\"mcdmpharmdb.db.dbmodel::mcdmpharm.File\"")
+@Table(name = "\"mpharmdb.db.dbmodel::mpharm.File\"")
 public class FileEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @Id
-    @SequenceGenerator(name = "S_File", sequenceName = "\"mcdmpharmdb.db::S_File\"", allocationSize = 1)
+    @SequenceGenerator(name = "S_File", sequenceName = "\"mpharmdb.db::S_File\"", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "S_File")
     private Long id;
 

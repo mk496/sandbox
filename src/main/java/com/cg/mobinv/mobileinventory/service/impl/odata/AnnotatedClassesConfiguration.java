@@ -54,7 +54,7 @@ public class AnnotatedClassesConfiguration {
 
         this.allClassesToLoad = new ArrayList<Class<?>>();
         this.classesAnnotatedEntity = getAnnotatedClassesFromPackage(MODEL_PACKAGE);
-        this.classesAnnotatedEntity.addAll(getAnnotatedClassesFromPackage(REPORT_MODEL_PACKAGE));
+//        this.classesAnnotatedEntity.addAll(getAnnotatedClassesFromPackage(REPORT_MODEL_PACKAGE));
 
         this.logger.info("All loaded entities :" + this.classesAnnotatedEntity);
         this.classesAnnotatedFunctionImport = getAnnotatedClassesFromPackage(FUNCTION_IMPORT_PACKAGE);
